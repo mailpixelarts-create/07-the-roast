@@ -1,0 +1,183 @@
+@import "../../styles/variables.scss";
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $z-nav;
+  padding: $space-sm 0;
+  transition: background 0.4s, backdrop-filter 0.4s, padding 0.4s;
+
+  &--scrolled {
+    background: rgba($charcoal-deep, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: $space-xs 0;
+    border-bottom: 1px solid rgba($steel, 0.08);
+  }
+
+  &__inner {
+    @include container;
+    @include flex-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 10;
+  }
+
+  &__logo-mark {
+    font-family: $font-display;
+    font-size: $text-sm;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: $copper;
+    width: 36px;
+    height: 36px;
+    @include flex-center;
+    border: 1px solid $copper;
+    border-radius: 2px;
+  }
+
+  &__logo-text {
+    font-family: $font-display;
+    font-size: $text-sm;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: $cream;
+  }
+
+  &__links {
+    display: none;
+    gap: 2rem;
+
+    @include respond-to(lg) {
+      display: flex;
+    }
+  }
+
+  &__link {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $steel;
+    transition: color 0.3s;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: $copper;
+      transition: width 0.3s $ease-out-expo;
+    }
+
+    &:hover {
+      color: $cream;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    z-index: 10;
+
+    @include respond-to(lg) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: $cream;
+      transition: all 0.3s $ease-out-expo;
+      transform-origin: center;
+    }
+
+    &--open {
+      span:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: translateY(-6.5px) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: $charcoal-deep;
+  z-index: 9;
+  @include flex-center;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s $ease-out-expo;
+
+  &--open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    font-family: $font-display;
+    font-size: $text-3xl;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: $cream;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $copper;
+    }
+  }
+
+  &__index {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    color: $steel;
+    letter-spacing: 0.1em;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: $space-lg;
+    left: $container-padding;
+    color: $steel-dark;
+    font-size: $text-xs;
+    letter-spacing: 0.1em;
+  }
+}

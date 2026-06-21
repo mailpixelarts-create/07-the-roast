@@ -1,0 +1,149 @@
+@import "../../styles/variables.scss";
+
+.origins {
+  background: $charcoal-deep;
+  overflow: hidden;
+
+  &__header {
+    max-width: 700px;
+    margin-bottom: $space-xl;
+  }
+
+  &__title {
+    font-size: $text-4xl;
+    font-weight: 700;
+    line-height: 1.1;
+    color: $cream;
+    margin: $space-md 0;
+  }
+
+  &__title-accent {
+    color: $copper;
+  }
+
+  &__desc {
+    font-size: $text-lg;
+    color: $steel-light;
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: $space-xl;
+    align-items: start;
+
+    @include respond-to(lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Map
+  &__map {
+    position: relative;
+    background: rgba($charcoal, 0.5);
+    border: 1px solid rgba($steel, 0.06);
+    padding: $space-md;
+    border-radius: 4px;
+
+    &::before {
+      content: '';
+      @include absolute-fill;
+      background:
+        radial-gradient(circle at 20% 30%, rgba($copper, 0.03), transparent 40%),
+        radial-gradient(circle at 80% 60%, rgba($orange-ember, 0.02), transparent 40%);
+      pointer-events: none;
+    }
+  }
+
+  &__map-svg {
+    width: 100%;
+    height: auto;
+    color: $steel;
+  }
+
+  &__dot {
+    transition: transform 0.3s $ease-out-expo;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  // Cards
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+  }
+
+  &__card {
+    background: linear-gradient(145deg, $charcoal-light, $charcoal);
+    border: 1px solid rgba($steel, 0.08);
+    box-shadow: 0 1px 0 rgba($white, 0.03) inset, 0 20px 60px rgba($black, 0.3);
+    padding: $space-md;
+    cursor: pointer;
+    transition: all 0.3s $ease-out-expo;
+
+    &:hover,
+    &--active {
+      border-color: rgba($copper, 0.3);
+      transform: translateX(4px);
+
+      .origins__card-country {
+        color: $copper;
+      }
+    }
+  }
+
+  &__card-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: $space-sm;
+  }
+
+  &__card-country {
+    font-size: $text-lg;
+    font-weight: 600;
+    color: $cream;
+    transition: color 0.3s;
+  }
+
+  &__card-region {
+    font-size: $text-xs;
+    color: $steel;
+    letter-spacing: 0.1em;
+  }
+
+  &__card-details {
+    display: flex;
+    gap: $space-lg;
+    margin-bottom: $space-sm;
+  }
+
+  &__card-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__card-label {
+    font-size: $text-xs;
+    color: $steel-dark;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__card-value {
+    font-size: $text-sm;
+    color: $cream;
+  }
+
+  &__card-notes {
+    font-size: $text-sm;
+    color: $copper;
+    font-style: italic;
+  }
+}
