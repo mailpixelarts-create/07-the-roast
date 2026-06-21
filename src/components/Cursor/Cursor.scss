@@ -1,0 +1,51 @@
+@use '../../styles/variables' as *;
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: $z-cursor;
+
+  @include respond-to(md) {
+    display: block;
+  }
+
+  @media (max-width: $bp-md) {
+    display: none;
+  }
+
+  &__dot {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $copper;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px rgba($orange-ember, 0.5);
+    z-index: 2;
+  }
+
+  &__ring {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba($steel, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s $ease-out-expo,
+                height 0.3s $ease-out-expo,
+                border-color 0.3s;
+  }
+
+  &-spark {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: $orange-ember;
+    box-shadow: 0 0 6px $orange-ember;
+    pointer-events: none;
+    animation: spark 0.6s ease-out forwards;
+  }
+}

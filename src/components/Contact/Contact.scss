@@ -1,0 +1,189 @@
+@use '../../styles/variables' as *;
+
+.contact {
+  background: $charcoal-deep;
+  overflow: hidden;
+
+  &__header {
+    max-width: 700px;
+    margin-bottom: $space-xl;
+  }
+
+  &__title {
+    font-size: $text-4xl;
+    font-weight: 700;
+    line-height: 1.1;
+    color: $cream;
+    margin: $space-md 0;
+  }
+
+  &__title-accent {
+    color: $copper;
+  }
+
+  &__desc {
+    font-size: $text-lg;
+    color: $steel-light;
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: $space-xl;
+
+    @include respond-to(lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Form
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+  }
+
+  &__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__label {
+    font-size: $text-xs;
+    color: $steel;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    font-family: $font-body;
+    font-size: $text-base;
+    color: $cream;
+    background: rgba($charcoal-light, 0.5);
+    border: 1px solid rgba($steel, 0.1);
+    padding: 1rem;
+    border-radius: 2px;
+    transition: all 0.3s;
+    outline: none;
+
+    &::placeholder {
+      color: $steel-dark;
+    }
+
+    &:focus {
+      border-color: $copper;
+      background: rgba($charcoal-light, 0.8);
+      box-shadow: 0 0 0 3px rgba($copper, 0.1);
+    }
+  }
+
+  &__select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%238A8D90' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 3rem;
+    cursor: pointer;
+
+    option {
+      background: $charcoal;
+      color: $cream;
+    }
+  }
+
+  &__textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  &__submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-family: $font-mono;
+    font-size: $text-sm;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $cream;
+    background: $copper;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.4s $ease-out-expo;
+    align-self: flex-start;
+
+    &:hover {
+      background: $orange-ember;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba($copper, 0.3);
+
+      svg {
+        transform: translateX(4px);
+      }
+    }
+
+    svg {
+      transition: transform 0.3s $ease-out-expo;
+    }
+  }
+
+  // Info
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $space-lg;
+    padding-left: $space-lg;
+    border-left: 1px solid rgba($steel, 0.08);
+
+    @include respond-to(lg) {
+      padding-left: 0;
+      border-left: none;
+      border-top: 1px solid rgba($steel, 0.08);
+      padding-top: $space-lg;
+    }
+  }
+
+  &__info-title {
+    font-size: $text-lg;
+    font-weight: 600;
+    color: $cream;
+    margin-bottom: 0.75rem;
+  }
+
+  &__info-text {
+    font-size: $text-sm;
+    color: $steel-light;
+    line-height: 1.8;
+
+    a {
+      color: $steel-light;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $copper;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: $space-md;
+  }
+
+  &__social {
+    font-family: $font-mono;
+    font-size: $text-sm;
+    color: $steel;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $copper;
+    }
+  }
+}

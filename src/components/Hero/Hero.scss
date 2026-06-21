@@ -1,0 +1,284 @@
+@use '../../styles/variables' as *;
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  @include flex-center;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    @include absolute-fill;
+  }
+
+  &__bg-layer {
+    position: absolute;
+    @include absolute-fill;
+
+    &--deep {
+      background:
+        radial-gradient(ellipse at 30% 50%, rgba($coffee-brown, 0.15), transparent 60%),
+        radial-gradient(ellipse at 70% 30%, rgba($copper, 0.08), transparent 50%);
+    }
+
+    &--mid {
+      background:
+        radial-gradient(circle at 50% 80%, rgba($orange-ember, 0.06), transparent 40%);
+    }
+  }
+
+  &__bg-gradient {
+    position: absolute;
+    @include absolute-fill;
+    background: linear-gradient(180deg, transparent 50%, $charcoal-deep 100%);
+  }
+
+  // Roasting Drum
+  &__drum {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &__drum-body {
+    width: clamp(300px, 40vw, 600px);
+    height: clamp(300px, 40vw, 600px);
+    @include flex-center;
+    position: relative;
+  }
+
+  &__drum-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba($steel, 0.08);
+
+    &--1 {
+      width: 100%;
+      height: 100%;
+      border-style: dashed;
+      animation: spin-drum 30s linear infinite;
+    }
+
+    &--2 {
+      width: 75%;
+      height: 75%;
+      border-color: rgba($copper, 0.12);
+      animation: spin-drum 20s linear infinite reverse;
+    }
+
+    &--3 {
+      width: 50%;
+      height: 50%;
+      border-color: rgba($orange-ember, 0.08);
+      animation: spin-drum 15s linear infinite;
+    }
+  }
+
+  &__drum-center {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $steel;
+    box-shadow: 0 0 30px rgba($copper, 0.3);
+  }
+
+  // Fire
+  &__fire {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 150px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &__flame {
+    position: absolute;
+    bottom: 0;
+    width: 8px;
+    height: 30px;
+    background: linear-gradient(to top, $orange-ember, $copper, transparent);
+    border-radius: 50% 50% 0 0;
+    animation: fire-flicker 0.8s ease-in-out infinite;
+    opacity: 0.6;
+
+    @for $i from 1 through 15 {
+      &:nth-child(#{$i}) {
+        left: 50% + ($i - 8) * 12px;
+        height: 20px + random(20) * 1px;
+        animation-delay: $i * 0.1s;
+        animation-duration: 0.6s + random(4) * 0.1s;
+      }
+    }
+  }
+
+  // Beans
+  &__beans {
+    position: absolute;
+    @include absolute-fill;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  &__bean {
+    position: absolute;
+    opacity: 0.3;
+
+    @for $i from 1 through 8 {
+      &:nth-child(#{$i}) {
+        top: 20% + random(60) * 1%;
+        left: 10% + random(80) * 1%;
+        width: 12px + random(16) * 1px;
+        animation: float 4s + random(3) * 1s ease-in-out infinite;
+        animation-delay: $i * 0.3s;
+        transform: rotate(random(180) * 1deg);
+      }
+    }
+  }
+
+  // Smoke
+  &__smoke {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 400px;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  &__smoke-particle {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba($white-smoke, 0.08), transparent);
+    animation: smoke-rise 4s ease-out infinite;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        left: 50% + ($i - 5) * 25px;
+        width: 40px + random(30) * 1px;
+        height: 40px + random(30) * 1px;
+        animation-delay: $i * 0.4s;
+        animation-duration: 3s + random(3) * 1s;
+      }
+    }
+  }
+
+  // Content
+  &__content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 0 $container-padding;
+  }
+
+  &__label {
+    justify-content: center;
+    margin-bottom: $space-lg;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: $text-hero;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 0.9;
+    color: $cream;
+    margin-bottom: $space-md;
+    perspective: 1000px;
+
+    .split-char {
+      display: inline-block;
+      opacity: 0;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-body;
+    font-size: $text-xl;
+    font-weight: 300;
+    color: $steel-light;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: $space-lg;
+  }
+
+  &__cta {
+    margin-bottom: $space-xl;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: $font-mono;
+    font-size: $text-sm;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $copper;
+    padding: 1rem 2rem;
+    border: 1px solid rgba($copper, 0.4);
+    transition: all 0.4s $ease-out-expo;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      @include absolute-fill;
+      background: rgba($copper, 0.08);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s $ease-out-expo;
+    }
+
+    &:hover {
+      border-color: $copper;
+      color: $cream;
+
+      &::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      svg {
+        transform: translateY(4px);
+      }
+    }
+
+    svg {
+      transition: transform 0.3s $ease-out-expo;
+    }
+  }
+
+  &__scroll-indicator {
+    position: absolute;
+    bottom: $space-lg;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    color: $steel-dark;
+    font-size: $text-xs;
+    letter-spacing: 0.2em;
+  }
+
+  &__scroll-line {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, $steel-dark, transparent);
+    animation: float 2s ease-in-out infinite;
+  }
+}

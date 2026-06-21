@@ -1,0 +1,119 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  background: $charcoal-deep;
+  padding: $space-xl 0 $space-lg;
+  border-top: 1px solid rgba($steel, 0.06);
+
+  &__rule {
+    margin-bottom: $space-xl;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: $space-xl;
+    margin-bottom: $space-xl;
+
+    @include respond-to(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Brand
+  &__brand {
+    max-width: 320px;
+  }
+
+  &__logo {
+    font-size: $text-2xl;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    color: $cream;
+    margin-bottom: 0.5rem;
+  }
+
+  &__tagline {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    color: $copper;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: $space-sm;
+  }
+
+  &__philosophy {
+    font-size: $text-sm;
+    color: $steel;
+    line-height: 1.7;
+  }
+
+  // Links
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-lg;
+
+    @include respond-to(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__link-title {
+    font-size: $text-xs;
+    color: $steel-dark;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+
+  &__link {
+    font-size: $text-sm;
+    color: $steel-light;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $copper;
+    }
+  }
+
+  // Bottom
+  &__bottom {
+    @include flex-between;
+    padding-top: $space-lg;
+    border-top: 1px solid rgba($steel, 0.06);
+    flex-wrap: wrap;
+    gap: $space-sm;
+  }
+
+  &__credit {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: $text-xs;
+    color: $steel-dark;
+    letter-spacing: 0.05em;
+  }
+
+  &__love {
+    color: $steel-dark;
+  }
+
+  &__heart {
+    color: $copper;
+    display: inline-block;
+    animation: ember-pulse 2s ease-in-out infinite;
+  }
+
+  &__location {
+    font-size: $text-xs;
+    color: $steel-dark;
+    letter-spacing: 0.05em;
+  }
+}

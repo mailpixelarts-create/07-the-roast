@@ -1,0 +1,189 @@
+@use '../../styles/variables' as *;
+
+.loader {
+  position: fixed;
+  @include fixed-fill;
+  z-index: $z-loader;
+  background: $charcoal-deep;
+  @include flex-center;
+  clip-path: inset(0 0 0 0);
+
+  &__inner {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  &__ember {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  &__ember-core {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: radial-gradient(circle, $orange-ember, $copper, transparent);
+    animation: ember-pulse 1.5s ease-in-out infinite;
+  }
+
+  &__ember-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba($orange-ember, 0.3);
+    animation: pulse-ring 2s ease-out infinite;
+  }
+
+  &__fire {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+  }
+
+  &__fire-particle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: $orange-ember;
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+    box-shadow: 0 0 10px $orange-ember;
+
+    @for $i from 1 through 20 {
+      &:nth-child(#{$i}) {
+        $angle: ($i - 1) * 18deg;
+        $radius: 20px + random(30) * 1px;
+        transform: translate(
+          cos($angle) * $radius,
+          sin($angle) * $radius - 40px
+        );
+      }
+    }
+  }
+
+  &__bean {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &__bean-svg {
+    width: 40px;
+    height: 54px;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+  }
+
+  &__drum {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    @include flex-center;
+    opacity: 0;
+  }
+
+  &__drum-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba($steel, 0.2);
+
+    &--outer {
+      width: 160px;
+      height: 160px;
+      border-style: dashed;
+    }
+
+    &--inner {
+      width: 120px;
+      height: 120px;
+      border-color: rgba($copper, 0.3);
+    }
+  }
+
+  &__drum-center {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $steel;
+  }
+
+  &__smoke {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 200px;
+    pointer-events: none;
+  }
+
+  &__smoke-puff {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba($white-smoke, 0.15), transparent);
+    transform: translateX(-50%);
+    opacity: 0;
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        left: 50% + ($i - 3) * 12px;
+      }
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    text-align: center;
+  }
+
+  &__logo-text {
+    font-family: $font-display;
+    font-size: $text-3xl;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: $cream;
+    text-transform: uppercase;
+  }
+
+  &__tagline {
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-family: $font-mono;
+    font-size: $text-xs;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $steel;
+  }
+}

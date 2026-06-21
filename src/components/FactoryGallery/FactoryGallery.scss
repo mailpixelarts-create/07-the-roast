@@ -1,0 +1,183 @@
+@use '../../styles/variables' as *;
+
+.gallery {
+  background: $charcoal-deep;
+  overflow: hidden;
+
+  &__header {
+    max-width: 700px;
+    margin-bottom: $space-xl;
+  }
+
+  &__title {
+    font-size: $text-4xl;
+    font-weight: 700;
+    line-height: 1.1;
+    color: $cream;
+    margin: $space-md 0;
+  }
+
+  &__title-accent {
+    color: $copper;
+  }
+
+  &__desc {
+    font-size: $text-lg;
+    color: $steel-light;
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  // Grid
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 280px;
+    gap: $space-sm;
+
+    @include respond-to(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 220px;
+    }
+
+    @include respond-to(sm) {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 250px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    background: $charcoal-light;
+    cursor: pointer;
+
+    &--large {
+      grid-column: span 2;
+      grid-row: span 2;
+
+      @include respond-to(md) {
+        grid-column: span 2;
+      }
+    }
+
+    &--medium {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &--small {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+
+  &__image {
+    @include absolute-fill;
+    transition: transform 0.8s $ease-out-expo;
+
+    .gallery__item:hover & {
+      transform: scale(1.08);
+    }
+  }
+
+  &__image-placeholder {
+    @include absolute-fill;
+    @include flex-center;
+    background:
+      linear-gradient(135deg, $charcoal-light 0%, $charcoal 100%);
+
+    &::before {
+      content: '';
+      @include absolute-fill;
+      background:
+        repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 20px,
+          rgba($steel, 0.02) 20px,
+          rgba($steel, 0.02) 21px
+        );
+    }
+  }
+
+  &__image-index {
+    font-size: $text-4xl;
+    font-weight: 300;
+    color: rgba($steel, 0.08);
+    letter-spacing: 0.1em;
+  }
+
+  &__overlay {
+    @include absolute-fill;
+    @include flex-between;
+    flex-direction: column;
+    padding: $space-md;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba($charcoal-deep, 0.9) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s;
+
+    .gallery__item:hover & {
+      opacity: 1;
+    }
+  }
+
+  &__label {
+    font-size: $text-xs;
+    color: $copper;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    align-self: flex-start;
+  }
+
+  &__item-title {
+    font-size: $text-xl;
+    font-weight: 600;
+    color: $cream;
+    align-self: flex-start;
+  }
+
+  // Fullscreen
+  &__fullscreen {
+    position: fixed;
+    @include fixed-fill;
+    z-index: 60;
+    background: rgba($charcoal-deep, 0.95);
+    @include flex-center;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.5s $ease-out-expo;
+    backdrop-filter: blur(20px);
+
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+      transform: scale(1);
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: $space-md;
+    right: $space-md;
+    color: $cream;
+    padding: $space-sm;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $copper;
+    }
+  }
+
+  &__fullscreen-content {
+    max-width: 80vw;
+    max-height: 80vh;
+    background: $charcoal;
+    border: 1px solid rgba($steel, 0.1);
+  }
+}

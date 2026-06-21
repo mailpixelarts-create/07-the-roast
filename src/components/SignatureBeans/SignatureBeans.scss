@@ -1,0 +1,229 @@
+@use '../../styles/variables' as *;
+
+.beans {
+  background: $charcoal;
+  overflow: hidden;
+
+  &__header {
+    max-width: 700px;
+    margin-bottom: $space-xl;
+  }
+
+  &__title {
+    font-size: $text-4xl;
+    font-weight: 700;
+    line-height: 1.1;
+    color: $cream;
+    margin: $space-md 0;
+  }
+
+  &__title-accent {
+    color: $orange-ember;
+  }
+
+  &__desc {
+    font-size: $text-lg;
+    color: $steel-light;
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  // Grid
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-md;
+
+    @include respond-to(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    @extend .steel-panel;
+    padding: $space-lg;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: $space-lg;
+    transition: all 0.4s $ease-out-expo;
+
+    @include respond-to(md) {
+      grid-template-columns: 1fr;
+    }
+
+    &:hover {
+      border-color: rgba($copper, 0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  // Coffee Bag
+  &__bag {
+    position: relative;
+    @include flex-center;
+    perspective: 800px;
+  }
+
+  &__bag-body {
+    width: 160px;
+    height: 220px;
+    background: linear-gradient(145deg, $charcoal-light, $charcoal);
+    border: 1px solid rgba($steel, 0.1);
+    position: relative;
+    transition: transform 0.6s $ease-out-expo;
+    transform-style: preserve-3d;
+
+    .beans__card--hovered & {
+      transform: rotateY(8deg) rotateX(-3deg);
+    }
+  }
+
+  &__bag-fold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(180deg, rgba($steel, 0.08), transparent);
+    border-bottom: 1px solid rgba($steel, 0.06);
+  }
+
+  &__bag-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+  }
+
+  &__bag-brand {
+    font-size: $text-xs;
+    color: $copper;
+    letter-spacing: 0.2em;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  &__bag-name {
+    font-size: $text-lg;
+    font-weight: 700;
+    color: $cream;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  &__bag-origin {
+    font-size: $text-xs;
+    color: $steel;
+    letter-spacing: 0.05em;
+  }
+
+  &__bag-shadow {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 20px;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.3), transparent);
+    filter: blur(8px);
+  }
+
+  // Info
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+  }
+
+  &__info-header {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+  }
+
+  &__roast-level {
+    font-size: $text-xs;
+    color: $copper;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid rgba($copper, 0.3);
+    border-radius: 2px;
+  }
+
+  &__description {
+    font-size: $text-sm;
+    color: $steel-light;
+    line-height: 1.7;
+  }
+
+  // Notes
+  &__notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__note {
+    font-family: $font-mono;
+    font-size: $text-xs;
+    color: $cream;
+    background: rgba($copper, 0.1);
+    border: 1px solid rgba($copper, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 2px;
+  }
+
+  // Flavor Wheel
+  &__wheel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
+
+  &__wheel-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 40px;
+    align-items: center;
+    gap: $space-sm;
+  }
+
+  &__wheel-label {
+    font-size: $text-xs;
+    color: $steel;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__wheel-bar {
+    height: 4px;
+    background: rgba($steel, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__wheel-fill {
+    height: 100%;
+    background: linear-gradient(90deg, $coffee-brown, $copper);
+    border-radius: 2px;
+    transition: width 1s $ease-out-expo;
+
+    &--acid {
+      background: linear-gradient(90deg, $copper, $orange-ember);
+    }
+
+    &--sweet {
+      background: linear-gradient(90deg, $coffee-brown, $cream);
+    }
+  }
+
+  &__wheel-value {
+    font-size: $text-xs;
+    color: $steel-dark;
+    text-align: right;
+  }
+}

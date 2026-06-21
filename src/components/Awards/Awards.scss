@@ -1,0 +1,122 @@
+@use '../../styles/variables' as *;
+
+.awards {
+  background: $charcoal;
+  overflow: hidden;
+
+  &__header {
+    max-width: 700px;
+    margin-bottom: $space-xl;
+  }
+
+  &__title {
+    font-size: $text-4xl;
+    font-weight: 700;
+    line-height: 1.1;
+    color: $cream;
+    margin: $space-md 0;
+  }
+
+  &__title-accent {
+    color: $orange-ember;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: $space-xl;
+    align-items: center;
+    margin-bottom: $space-xl;
+
+    @include respond-to(md) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Counters
+  &__counters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-md;
+
+    @include respond-to(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__counter {
+    @extend .steel-panel;
+    padding: $space-lg;
+    text-align: center;
+    transition: all 0.3s $ease-out-expo;
+
+    &:hover {
+      border-color: rgba($copper, 0.2);
+      transform: translateY(-4px);
+    }
+  }
+
+  &__counter-value {
+    font-size: $text-4xl;
+    font-weight: 800;
+    color: $copper;
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  &__counter-label {
+    font-size: $text-xs;
+    color: $steel;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  // Trophy
+  &__trophy {
+    @include flex-center;
+
+    @include respond-to(md) {
+      order: -1;
+    }
+  }
+
+  &__trophy-svg {
+    width: 200px;
+    height: 260px;
+    filter: drop-shadow(0 0 30px rgba($copper, 0.2));
+  }
+
+  // Marquee
+  &__marquee {
+    overflow: hidden;
+    border-top: 1px solid rgba($steel, 0.08);
+    border-bottom: 1px solid rgba($steel, 0.08);
+    padding: $space-md 0;
+  }
+
+  &__marquee-track {
+    display: flex;
+    align-items: center;
+    gap: $space-lg;
+    animation: marquee 30s linear infinite;
+    width: max-content;
+  }
+
+  &__marquee-item {
+    font-size: $text-2xl;
+    font-weight: 600;
+    color: rgba($cream, 0.15);
+    white-space: nowrap;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $copper;
+    }
+  }
+
+  &__marquee-divider {
+    color: rgba($copper, 0.3);
+    font-size: $text-sm;
+  }
+}
