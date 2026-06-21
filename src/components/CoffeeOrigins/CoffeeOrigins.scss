@@ -1,4 +1,4 @@
-@use '../../styles/variables' as *;
+@import "../../styles/variables.scss";
 
 .origins {
   background: $charcoal-deep;
@@ -79,7 +79,9 @@
   }
 
   &__card {
-    @extend .steel-panel;
+    background: linear-gradient(145deg, $charcoal-light, $charcoal);
+    border: 1px solid rgba($steel, 0.08);
+    box-shadow: 0 1px 0 rgba($white, 0.03) inset, 0 20px 60px rgba($black, 0.3);
     padding: $space-md;
     cursor: pointer;
     transition: all 0.3s $ease-out-expo;
