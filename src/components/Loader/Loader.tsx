@@ -17,6 +17,7 @@ const Loader = ({ onComplete }: LoaderProps) => {
 
   return (
     <div className="loader" ref={loaderRef}>
+      <div className="loader__bg-image" />
       <div className="loader__inner">
         {/* Ember */}
         <div className="loader__ember">

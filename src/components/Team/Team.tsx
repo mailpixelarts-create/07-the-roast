@@ -31,7 +31,7 @@ const Team = () => {
           {TEAM_MEMBERS.map((member, i) => (
             <div key={member.name} className="team__member" data-cursor>
               <div className="team__portrait">
-                <div className="team__portrait-inner">
+                <div className="team__portrait-inner" style={{ backgroundImage: `url('${member.image}')` }}>
                   <span className="team__portrait-initial font-display">
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </span>

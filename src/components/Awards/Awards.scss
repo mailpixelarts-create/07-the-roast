@@ -3,6 +3,20 @@
 .awards {
   background: $charcoal;
   overflow: hidden;
+  position: relative;
+
+  &__bg-image {
+    position: absolute;
+    @include absolute-fill;
+    background: url('/images/image_23.png') center / cover no-repeat;
+    opacity: 0.12;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
 
   &__header {
     max-width: 700px;

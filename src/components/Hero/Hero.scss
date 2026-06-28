@@ -11,6 +11,23 @@
     @include absolute-fill;
   }
 
+  &__bg-image {
+    position: absolute;
+    @include absolute-fill;
+    background: url('/images/image_26.png') center / cover no-repeat;
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  &__bg-parallax {
+    position: absolute;
+    @include absolute-fill;
+    background: url('/images/image_16.png') center / cover no-repeat;
+    opacity: 0.25;
+    z-index: 0;
+    transform: scale(1.1);
+  }
+
   &__bg-layer {
     position: absolute;
     @include absolute-fill;

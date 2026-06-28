@@ -8,6 +8,14 @@
   @include flex-center;
   clip-path: inset(0 0 0 0);
 
+  &__bg-image {
+    position: absolute;
+    @include absolute-fill;
+    background: url('/images/image_28.png') center / cover no-repeat;
+    opacity: 0.15;
+    z-index: 0;
+  }
+
   &__inner {
     position: relative;
     width: 400px;

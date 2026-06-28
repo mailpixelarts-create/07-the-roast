@@ -1,0 +1,138 @@
+# THE ROAST — Image Generation Prompts
+# Industrial Coffee Roastery
+# Aesthetic: Fire, steel, smoke, precision
+# Colors: Charcoal #171717 | Coffee Brown #50372D | Copper #B76D42 | Orange Ember #FF8C42
+
+---
+
+## THE ROASTERY
+
+### IMAGE 01: Interior — Main Floor
+**Aspect Ratio:** 3:4
+**Prompt:** Industrial cathedral of coffee roasting. A vast open floor with polished concrete and exposed steel beams overhead. At the center, a large Loring S35 Kestrel coffee roaster in matte black with copper accents dominates the space — a sculptural machine of fire and steel. Copper pipes run along the ceiling, catching warm light. Orange glow emanates from the roaster's drum window. Stacks of burlap coffee sacks line one wall. The atmosphere is industrial, reverent, like a temple of craft. Warm orange light from the roaster contrasts with cool steel blue shadows. Shot on Sony A7R IV, 16-35mm f/2.8 GM at 24mm, f/8, tripod-mounted, low angle. Warm orange key light from roaster with cool ambient fill. Architectural interior photography, industrial cathedral, charcoal and copper tones, fire glow, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, clean sterile, modern office, plastic, crowds, cold blue light
+
+---
+
+### IMAGE 02: Equipment — Roasting Line
+**Aspect Ratio:** 3:4
+**Prompt:** Medium shot of a Loring S35 Kestrel coffee roaster in operation. The roaster is matte black with polished copper fittings and a large glass drum window revealing tumbling coffee beans inside. The beans are mid-roast — transitioning from green to yellow-brown. Orange ember light glows from the burner visible through the sight glass. Digital temperature displays show roasting profiles. A copper cooling tray sits beside the machine. The roaster is the hero — a precision instrument of fire and timing. Warm light from the roaster illuminates the immediate area. Shot on Sony A7R IV, 50mm f/1.2 GM, f/2.8, eye-level angle. Warm orange glow from roaster drum. Equipment photography, roasting machine detail, black and copper with fire accents, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, small home roaster, plastic, cold light, idle machine, no glow
+
+---
+
+### IMAGE 03: Detail — Copper Fittings
+**Aspect Ratio:** 1:1
+**Prompt:** Extreme close-up of copper and steel fittings on an industrial coffee roaster. A polished copper pipe joint connects to a matte black steel pipe. The copper has a warm, living glow — slight patina at the edges, polished bright where handled. A brass valve handle with a round grip is visible. The steel is industrial, textured, with visible weld marks. The junction of two materials — warm copper and cool steel — creates a beautiful contrast. Orange ember light from the roaster casts a warm glow on the copper surfaces. Shot on Sony A7R IV, 90mm f/2.8 Macro G, f/5.6, tripod-mounted, close-up angle. Warm orange side light. Industrial detail photography, copper and steel contrast, fire-lit warmth, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, plastic fittings, chrome, cold light, no patina, new and unused
+
+---
+
+## FACTORY GALLERY
+
+### IMAGE 04: "The Drum Room"
+**Aspect Ratio:** 3:4 (large)
+**Prompt:** Dramatic interior of a coffee roaster's drum room. The large roasting drum is visible through a glass window, coffee beans tumbling inside in a hypnotic spiral. The drum is illuminated from within by the burner's orange glow, making the beans appear to be in a river of fire. The room is dark steel and concrete, with the roaster as the sole light source. Copper pipes and gauges frame the drum. The atmosphere is intense, focused — the heart of the roasting process. Heat shimmer is visible above the machine. Shot on Sony A7R IV, 35mm f/1.4 GM, f/2.8, eye-level, tight framing on drum. Orange fire glow as key light. Industrial photography, drum room, fire and steel, intense warm tones, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, cold room, electric light, plastic, idle machine, no beans
+
+---
+
+### IMAGE 05: "Green Beans"
+**Aspect Ratio:** 1:1 (small)
+**Prompt:** Close-up of raw green coffee beans in a burlap sack. The beans are pale green-grey, unroasted, with visible silver skin. They fill the frame, creating a sea of unripe potential. The burlap texture of the sack is visible at the edges — rough, organic, natural. The beans vary slightly in size and color, showing their origin from a specific lot and farm. The light is soft, natural, revealing the matte surface of the green beans. The image represents the starting point — raw material before transformation by fire. Shot on Sony A7R IV, 90mm f/2.8 Macro G, f/4, overhead angle, tripod-mounted. Soft diffused natural light. Product photography, green coffee beans, pale green-grey tones, raw material, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, roasted beans, plastic container, harsh flash, wet beans, debris
+
+---
+
+### IMAGE 06: "Copper Pipes"
+**Aspect Ratio:** 1:1 (small)
+**Prompt:** Detail of industrial copper pipe work in a coffee roastery. Multiple copper pipes of varying diameters run along a concrete wall, connected by soldered joints and brass fittings. The pipes have a warm, living patina — bright copper where recently cleaned, green-brown verdigris at joints and overhead runs. Pressure gauges with brass bezels and glass faces are mounted at intervals. The pipes are functional, beautiful, industrial sculpture. Warm ambient light catches the copper surfaces, creating highlights and shadows that emphasize the cylindrical forms. Shot on Sony A7R IV, 50mm f/1.2 GM, f/4, eye-level angle, tight framing. Warm ambient light. Industrial detail photography, copper pipe network, warm metallic tones, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, plastic pipes, PVC, chrome, cold light, new and shiny, no patina
+
+---
+
+### IMAGE 07: "Roasting Line"
+**Aspect Ratio:** 3:4 (medium)
+**Prompt:** Full view of a coffee roasting line in an industrial roastery. Multiple roasting machines of different sizes arranged in a row — a large production roaster at center, smaller sample roasters flanking it. Each machine has its own copper pipe connections and exhaust system. The floor is polished concrete, the walls raw brick. Overhead, copper exhaust ducts curve toward the ceiling. Burlap sacks of green beans are stacked at one end, bags of freshly roasted beans at the other. The line represents the complete journey from green to roasted. Warm light from each roaster's drum window creates multiple orange glow points. Shot on Sony A7R IV, 24-70mm f/2.8 GM at 35mm, f/5.6, eye-level, linear perspective. Multiple warm roaster lights. Industrial photography, roasting line, sequential process, warm industrial tones, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, single small roaster, home setup, plastic, cold light, idle machines
+
+---
+
+### IMAGE 08: "Cupping Session"
+**Aspect Ratio:** 3:4 (medium)
+**Prompt:** Coffee cupping table in a roastery quality lab. A long wooden table with rows of cupping bowls — each containing freshly brewed coffee at different roast levels. Small silver cupping spoons rest in each bowl. Score sheets, flavor wheels, and green coffee sample bags are scattered on the table. A cupping lamp provides focused warm light on the bowls. The room is otherwise cool and neutral — grey walls, concrete floor — to not interfere with color perception. The setup is precise, scientific, the quality control heart of the roastery. Shot on Sony A7R IV, 50mm f/1.2 GM, f/2.8, slightly overhead angle. Warm cupping lamp as key with cool ambient. Editorial photography, cupping session, precise coffee evaluation, warm amber coffee tones, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, casual tasting, wine glasses, bright colors, harsh overhead light
+
+---
+
+### IMAGE 09: "The Cooling Tray"
+**Aspect Ratio:** 1:1 (small)
+**Prompt:** Close-up of freshly roasted coffee beans in a rapid cooling tray. The beans are dark, glossy with oils, mid-cool — some still emitting faint wisps of smoke. The cooling tray is a large circular copper vessel with perforated holes for air circulation. The beans are being stirred by rotating arms, creating a spiral pattern. The contrast between the dark roasted beans and the bright copper tray is striking. The beans are at the perfect roast — dark brown with an oily sheen, ready for rest. The light catches the oils on the bean surfaces, creating hundreds of tiny highlights. Shot on Sony A7R IV, 90mm f/2.8 Macro G, f/4, overhead angle, fast shutter to freeze motion. Warm ambient light. Product photography, cooling tray, dark roast beans against copper, fire and precision, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, green beans, cold tray, plastic, no smoke, light roast, harsh flash
+
+---
+
+### IMAGE 10: "Smoke & Light"
+**Aspect Ratio:** 3:4 (large)
+**Prompt:** Dramatic photograph of smoke rising from a coffee roaster, caught in a shaft of industrial light. The smoke is thick, aromatic, swirling upward from the roaster's exhaust. A single overhead industrial light fixture creates a defined beam that illuminates the smoke, making it glow warm amber against the dark industrial background. The smoke forms organic, evolving shapes — like clouds or fabric. The roaster's dark silhouette is visible below. The atmosphere is dramatic, cinematic, industrial — the poetry of fire and transformation. Shot on Sony A7R IV, 85mm f/1.4 GM, f/2.8, medium telephoto compression, eye-level. Hard overhead industrial light creating smoke beam. Cinematic industrial photography, smoke and light study, warm amber against dark, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, no smoke, clear air, multiple lights, bright room, plastic, fire alarm
+
+---
+
+### IMAGE 11: "Packaging"
+**Aspect Ratio:** 1:1 (small)
+**Prompt:** Close-up of freshly packaged coffee bags on a packing table. Kraft paper bags with a minimal black and copper label design, sealed with a copper tin-tie. One bag stands upright, another lies on its side, a third is being filled from a hopper. Freshly roasted beans are visible through a small clear window in one bag. The bags have a tactile, artisanal quality — thick paper, clean typography, craft packaging. The table is dark wood with scattered coffee chaff and a few stray beans. The light is warm, focused on the packaging as hero product. Shot on Sony A7R IV, 50mm f/1.2 GM, f/2.8, eye-level, tight framing. Warm directional light. Product photography, coffee packaging, kraft and copper branding, craft detail, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, plastic bags, generic packaging, harsh flash, clutter, cold light
+
+---
+
+## TEAM
+
+### IMAGE 12: Marcus Steel — Head Roaster
+**Aspect Ratio:** 3:4
+**Prompt:** Portrait of Marcus Steel, Head Roaster, in an industrial coffee roastery. A man in his 40s with strong features, wearing a dark work apron over a charcoal henley. He stands beside the Loring roaster, one hand resting on the machine's copper fitting. His face is lit by the warm orange glow from the roaster's drum window, creating dramatic chiaroscuro. His expression is focused, confident — a master of fire and timing. The background is the dark industrial roastery — steel, copper, shadow. The portrait is editorial, dignified, celebrating craft. Shot on Sony A7R IV, 85mm f/1.4 GM, f/2.0, medium format feel, eye-level. Warm orange roaster glow as key light, cool ambient fill. Editorial portrait photography, industrial craftsman, warm fire-lit tones, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, smile, casual pose, bright room, plastic, modern office backdrop
+
+---
+
+### IMAGE 13: Elena Voss — Green Coffee Buyer
+**Aspect Ratio:** 3:4
+**Prompt:** Portrait of Elena Voss, Green Coffee Buyer, in a roastery warehouse. A woman in her 30s with sharp, intelligent features, wearing a linen shirt and dark vest. She stands among stacks of burlap coffee sacks from around the world — Ethiopian, Colombian, Guatemalan. She holds a handful of green coffee beans, examining them with a trained eye. Natural light from a high warehouse window illuminates her face and the beans. The background is rows of labeled burlap sacks — a library of origins. Her expression is curious, discerning — someone who tastes the world. Shot on Sony A7R IV, 85mm f/1.4 GM, f/2.0, medium format feel, eye-level. Natural window light as key. Editorial portrait photography, coffee buyer in warehouse, earthy burlap tones, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, casual smile, modern office, plastic, bright overhead light, staged
+
+---
+
+### IMAGE 14: James Copper — Head Barista
+**Aspect Ratio:** 3:4
+**Prompt:** Portrait of James Copper, Head Barista, behind the bar of an industrial cafe. A man in his early 30s with precise movements, wearing a dark apron with copper hardware over a black shirt. He is mid-pour, creating latte art with focused precision. The bar is polished concrete with copper accents. Behind him, chrome espresso machines gleam. The light is warm, editorial — a pendant light above creates a focused pool on his hands and the cup. His expression is calm, concentrated — the art of coffee as performance. The background is softly blurred industrial cafe interior. Shot on Sony A7R IV, 85mm f/1.4 GM, f/2.0, medium format feel, eye-level. Warm pendant light as key. Editorial portrait, barista as artisan, warm copper and charcoal tones, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, casual pose, bright overhead light, plastic, modern chain cafe aesthetic
+
+---
+
+### IMAGE 15: Sofia Rojas — Quality Director
+**Aspect Ratio:** 3:4
+**Prompt:** Portrait of Sofia Rojas, Quality Director, in a cupping lab. A woman in her late 30s with a precise, analytical demeanor, wearing a white lab coat over dark clothes. She sits at a cupping table, a cupping spoon in hand, eyes closed in concentration as she evaluates a coffee. Multiple cupping bowls are arranged in front of her, each at different temperatures. A flavor wheel poster hangs on the grey wall behind. The light is cool, neutral — designed for accurate color perception. Her expression is meditative, focused — the scientific side of coffee craft. The setting is clinical but warm — concrete, wood, copper accents. Shot on Sony A7R IV, 85mm f/1.4 GM, f/2.0, medium format feel, eye-level. Cool neutral cupping lab light. Editorial portrait, quality expert, neutral clinical tones with warm copper accents, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, smiling, casual, bright warm light, plastic, modern office, wine tasting
+
+---
+
+## ADDITIONAL IMAGES
+
+### IMAGE 16: Hero — Industrial Roastery Entrance
+**Aspect Ratio:** 16:9
+**Prompt:** Dramatic wide-angle view of an industrial coffee roastery entrance at dusk. A massive steel roller door stands partially open, revealing the warm orange glow of roasting machines within. The exterior is raw brick and steel, with a weathered copper sign reading the cafe name. Burlap sacks of green coffee beans are stacked near the entrance. Steam and aromatic smoke drift from the open door, catching the last blue light of dusk. The contrast between the cool exterior twilight and the warm industrial fire glow within is dramatic and inviting. The atmosphere is raw, authentic, craft. Shot on Sony A7R IV, 16-35mm f/2.8 GM at 20mm, f/8, tripod-mounted, low angle. Warm orange interior glow against cool dusk exterior. Architectural photography, industrial entrance, fire and steel, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, clean modern entrance, plastic, crowds, bright daylight, cold light
+
+---
+
+### IMAGE 17: Roasting Process — Bean Transformation Timeline
+**Aspect Ratio:** 3:4
+**Prompt:** Sequential close-up photographs of coffee beans at different roast stages, arranged left to right on a dark steel surface. Raw green beans on the far left, then yellowing, light brown, medium brown, dark brown, and finally oily dark roasted beans on the far right. Each stage is clearly distinct — the color gradient tells the story of transformation by fire. The beans are arranged in small piles on a raw steel plate. Warm directional light rakes across the sequence, emphasizing the color and texture changes. The steel surface shows heat marks and patina. The image is scientific, beautiful, a visual timeline of the roasting craft. Shot on Sony A7R IV, 90mm f/2.8 Macro G, f/5.6, overhead angle, tripod-mounted. Warm directional raking light. Editorial product photography, roast transformation sequence, green to dark brown gradient, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, uniform color, plastic plate, harsh flash, cold light, no progression
+
+---
+
+### IMAGE 18: Coffee Origins — World Map Display
+**Aspect Ratio:** 16:9
+**Prompt:** A large wall-mounted world map in an industrial roastery, showing coffee origin regions highlighted in copper against a dark charcoal background. The map is stylized — continents outlined in thin copper wire or printed in copper foil on dark steel. Key origin regions — Ethiopia, Colombia, Guatemala, Brazil, Kenya — are marked with small copper pins or LED indicators. Lines connecting origins to the roastery create a network of copper threads. The map is lit by industrial pendant lights casting warm pools of light on the copper surfaces. Below the map, burlap sacks from each origin are stacked. The display is both educational and beautiful — a celebration of global coffee sourcing. Shot on Sony A7R IV, 24-70mm f/2.8 GM at 35mm, f/4, eye-level, straight-on. Warm pendant light on copper map. Interior photography, coffee origins map, copper on charcoal, industrial craft, film grain, ultra-detailed. 8K UHD, photorealistic, cinematic color grading, film grain, ultra-detailed.
+**Negative Prompt:** blurry, low quality, oversaturated, text, watermark, logo, cartoon, anime, illustration, painting, sketch, distorted, deformed, extra limbs, bad anatomy, digital screen, plastic map, bright room, modern office, cold light

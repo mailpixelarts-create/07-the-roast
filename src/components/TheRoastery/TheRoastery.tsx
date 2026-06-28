@@ -67,15 +67,15 @@ const TheRoastery = () => {
 
           {/* Images */}
           <div className="roastery__images">
-            <div className="roastery__image roastery__image--1">
+            <div className="roastery__image roastery__image--1" style={{ backgroundImage: "url('/images/image_01.png')" }}>
               <div className="roastery__image-overlay" />
               <div className="roastery__image-label font-mono">Interior — Main Floor</div>
             </div>
-            <div className="roastery__image roastery__image--2">
+            <div className="roastery__image roastery__image--2" style={{ backgroundImage: "url('/images/image_02.png')" }}>
               <div className="roastery__image-overlay" />
               <div className="roastery__image-label font-mono">Equipment — Roasting Line</div>
             </div>
-            <div className="roastery__image roastery__image--3">
+            <div className="roastery__image roastery__image--3" style={{ backgroundImage: "url('/images/image_03.png')" }}>
               <div className="roastery__image-overlay" />
               <div className="roastery__image-label font-mono">Detail — Copper Fittings</div>
             </div>

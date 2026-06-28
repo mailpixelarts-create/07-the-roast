@@ -70,7 +70,9 @@
   &__bag-body {
     width: 160px;
     height: 220px;
-    background: linear-gradient(145deg, $charcoal-light, $charcoal);
+    background-size: cover;
+    background-position: center;
+    background-color: $charcoal-light;
     border: 1px solid rgba($steel, 0.1);
     position: relative;
     transition: transform 0.6s $ease-out-expo;

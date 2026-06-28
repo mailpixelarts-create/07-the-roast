@@ -31,6 +31,7 @@ const RoastingProcess = () => {
 
   return (
     <section className="process section" id="process" ref={sectionRef}>
+      <div className="process__bg-image" />
       <div className="container">
         <div className="process__header">
           <span className="section-label">02 / The Process</span>

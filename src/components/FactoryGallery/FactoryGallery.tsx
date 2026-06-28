@@ -3,14 +3,14 @@ import { animateGallery } from '../../animations/gallery'
 import './FactoryGallery.scss'
 
 const galleryItems = [
-  { id: 1, title: 'The Drum Room', category: 'Interior', size: 'large' },
-  { id: 2, title: 'Green Beans', category: 'Process', size: 'small' },
-  { id: 3, title: 'Copper Pipes', category: 'Detail', size: 'small' },
-  { id: 4, title: 'Roasting Line', category: 'Equipment', size: 'medium' },
-  { id: 5, title: 'Cupping Session', category: 'Quality', size: 'medium' },
-  { id: 6, title: 'The Cooling Tray', category: 'Process', size: 'small' },
-  { id: 7, title: 'Smoke & Light', category: 'Atmosphere', size: 'large' },
-  { id: 8, title: 'Packaging', category: 'Detail', size: 'small' },
+  { id: 1, title: 'The Drum Room', category: 'Interior', size: 'large', image: '/images/image_04.png' },
+  { id: 2, title: 'Green Beans', category: 'Process', size: 'small', image: '/images/image_05.png' },
+  { id: 3, title: 'Copper Pipes', category: 'Detail', size: 'small', image: '/images/image_06.png' },
+  { id: 4, title: 'Roasting Line', category: 'Equipment', size: 'medium', image: '/images/image_07.png' },
+  { id: 5, title: 'Cupping Session', category: 'Quality', size: 'medium', image: '/images/image_08.png' },
+  { id: 6, title: 'The Cooling Tray', category: 'Process', size: 'small', image: '/images/image_09.png' },
+  { id: 7, title: 'Smoke & Light', category: 'Atmosphere', size: 'large', image: '/images/image_10.png' },
+  { id: 8, title: 'Packaging', category: 'Detail', size: 'small', image: '/images/image_11.png' },
 ]
 
 const FactoryGallery = () => {
@@ -49,7 +49,7 @@ const FactoryGallery = () => {
                 data-cursor
               >
                 <div className="gallery__image">
-                  <div className="gallery__image-placeholder">
+                  <div className="gallery__image-placeholder" style={{ backgroundImage: `url('${item.image}')` }}>
                     <span className="gallery__image-index font-mono">
                       {String(item.id).padStart(2, '0')}
                     </span>

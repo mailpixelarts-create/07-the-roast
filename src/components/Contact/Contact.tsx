@@ -27,6 +27,7 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact" ref={sectionRef}>
+      <div className="contact__bg-image" />
       <div className="container">
         <div className="contact__header">
           <span className="section-label">09 / Contact</span>

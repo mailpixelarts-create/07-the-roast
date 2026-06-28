@@ -148,6 +148,7 @@ export const SIGNATURE_BEANS = [
     acidity: 5,
     sweetness: 7,
     description: 'Our flagship blend. Born from fire, refined by precision.',
+    image: '/images/image_19.png',
   },
   {
     name: 'Copper sunrise',
@@ -158,6 +159,7 @@ export const SIGNATURE_BEANS = [
     acidity: 8,
     sweetness: 9,
     description: 'A luminous cup that captures the first light of dawn.',
+    image: '/images/image_20.png',
   },
   {
     name: 'Steel Reserve',
@@ -168,6 +170,7 @@ export const SIGNATURE_BEANS = [
     acidity: 6,
     sweetness: 4,
     description: 'Unapologetically bold. Built for those who demand intensity.',
+    image: '/images/image_21.png',
   },
   {
     name: 'Smoke Signal',
@@ -178,6 +181,7 @@ export const SIGNATURE_BEANS = [
     acidity: 3,
     sweetness: 5,
     description: 'The terroir of volcanic soil in every sip.',
+    image: '/images/image_22.png',
   },
 ] as const
 
@@ -186,21 +190,25 @@ export const TEAM_MEMBERS = [
     name: 'Marcus Steel',
     role: 'Head Roaster',
     bio: '15 years mastering the art of the roast. Former champion, eternal student of fire.',
+    image: '/images/image_12.png',
   },
   {
     name: 'Elena Voss',
     role: 'Green Coffee Buyer',
     bio: 'Travels 200 days a year sourcing the worlds most extraordinary beans.',
+    image: '/images/image_13.png',
   },
   {
     name: 'James Copper',
     role: 'Head Barista',
     bio: 'Precision in every extraction. Where science meets intuition.',
+    image: '/images/image_14.png',
   },
   {
     name: 'Sofia Rojas',
     role: 'Quality Director',
     bio: 'Cupping 300 samples a week. Nothing passes without her seal.',
+    image: '/images/image_15.png',
   },
 ] as const
 

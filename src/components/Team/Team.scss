@@ -77,7 +77,9 @@
   &__portrait-inner {
     @include absolute-fill;
     @include flex-center;
-    background: linear-gradient(135deg, $charcoal-light, $charcoal);
+    background-size: cover;
+    background-position: center;
+    background-color: $charcoal-light;
     border-radius: 50%;
     z-index: 2;
   }

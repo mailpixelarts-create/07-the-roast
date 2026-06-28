@@ -30,7 +30,7 @@ const CoffeeOrigins = () => {
 
         <div className="origins__content">
           {/* World Map */}
-          <div className="origins__map">
+          <div className="origins__map" style={{ backgroundImage: "url('/images/image_18.png')" }}>
             <svg viewBox="0 0 1000 500" className="origins__map-svg">
               {/* Simplified world map paths */}
               <g className="origins__continents" opacity="0.15">

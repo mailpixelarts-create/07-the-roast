@@ -39,7 +39,7 @@ const SignatureBeans = () => {
             >
               {/* Coffee Bag */}
               <div className="beans__bag">
-                <div className="beans__bag-body">
+                <div className="beans__bag-body" style={{ backgroundImage: `url('${bean.image}')` }}>
                   <div className="beans__bag-fold" />
                   <div className="beans__bag-label">
                     <span className="beans__bag-brand font-mono">THE ROAST</span>

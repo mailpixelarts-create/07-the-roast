@@ -3,20 +3,13 @@ import './Footer.scss'
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="footer__bg-image" />
       <div className="container">
-        {/* Top Rule */}
-        <div className="footer__rule">
-          <hr className="copper-rule" style={{ width: '100%' }} />
-        </div>
-
         <div className="footer__content">
           {/* Brand */}
           <div className="footer__brand">
             <h3 className="footer__logo font-display">THE ROAST</h3>
             <p className="footer__tagline">Cinematic Coffee Roastery</p>
-            <p className="footer__philosophy">
-              Every bean tells a story of origin, fire, and precision.
-            </p>
           </div>
 
           {/* Links */}
@@ -47,17 +40,12 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="footer__bottom">
-          <div className="footer__credit">
-            <span className="font-mono">
-              © 2026 Norman James. All rights reserved.
-            </span>
-            <span className="footer__love">
-              Made with <span className="footer__heart" style={{ color: 'red' }}>♥</span> by Empathy Studio +91 9833274308
-            </span>
-          </div>
-          <div className="footer__location font-mono">
-            Portland, Oregon &mdash; 45.5152&deg;N, 122.6784&deg;W
-          </div>
+          <span className="footer__credit font-mono">
+            © 2026 Norman James. All rights reserved. Made with <span className="footer__heart" style={{ color: 'red' }}>♥</span> by Empathy Studio
+          </span>
+          <span className="footer__location font-mono">
+            Portland, Oregon
+          </span>
         </div>
       </div>
     </footer>

@@ -68,6 +68,7 @@ const Awards = () => {
 
   return (
     <section className="awards section" id="awards" ref={sectionRef}>
+      <div className="awards__bg-image" />
       <div className="container">
         <div className="awards__header">
           <span className="section-label">08 / Recognition</span>

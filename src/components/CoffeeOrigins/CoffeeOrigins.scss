@@ -42,7 +42,9 @@
   // Map
   &__map {
     position: relative;
-    background: rgba($charcoal, 0.5);
+    background-color: rgba($charcoal, 0.5);
+    background-size: cover;
+    background-position: center;
     border: 1px solid rgba($steel, 0.06);
     padding: $space-md;
     border-radius: 4px;

@@ -22,6 +22,8 @@ const Hero = () => {
     <section className="hero" ref={heroRef}>
       {/* Background Layers */}
       <div className="hero__bg">
+        <div className="hero__bg-image" />
+        <div className="hero__bg-parallax" />
         <div className="hero__bg-layer hero__bg-layer--deep" />
         <div className="hero__bg-layer hero__bg-layer--mid" />
         <div className="hero__bg-gradient" />

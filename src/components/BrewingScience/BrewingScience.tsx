@@ -13,6 +13,7 @@ const BrewingScience = () => {
 
   return (
     <section className="science section" id="science" ref={sectionRef}>
+      <div className="science__bg-image" />
       <div className="container">
         <div className="science__header">
           <span className="section-label">06 / The Science</span>
