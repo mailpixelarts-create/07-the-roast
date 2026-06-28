@@ -49,10 +49,10 @@ const Footer = () => {
         <div className="footer__bottom">
           <div className="footer__credit">
             <span className="font-mono">
-              A LOOKBOOK Studio Experience, &copy; Norman James
+              © 2026 Norman James. All rights reserved.
             </span>
             <span className="footer__love">
-              made with <span className="footer__heart">&#10084;</span> by Empathy Studio
+              Made with <span className="footer__heart" style={{ color: 'red' }}>♥</span> by Empathy Studio +91 9833274308
             </span>
           </div>
           <div className="footer__location font-mono">
