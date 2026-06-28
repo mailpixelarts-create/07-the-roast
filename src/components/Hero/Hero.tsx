@@ -22,12 +22,6 @@ const Hero = () => {
     <section className="hero" ref={heroRef}>
       {/* Background Layers */}
       <div className="hero__bg">
-        <img
-          src="/images/image-37-the-coat-check.png"
-          alt="The Coat Check"
-          className="hero__bg-img"
-          fetchPriority="high"
-        />
         <div className="hero__bg-layer hero__bg-layer--deep" />
         <div className="hero__bg-layer hero__bg-layer--mid" />
         <div className="hero__bg-gradient" />
